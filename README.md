@@ -32,15 +32,20 @@ VADER sentitment library is used to attach a sentiment score (compound score) to
 VADER takes into account emojis, punctuations, and capitalization to generate the compund score and hence we do not remove emojis and punctuations at this point. Also note we did not convert tweet to lower case yet.
 
 compound score < 0 ----> Negative Sentiment
+
 compound scaore = 0 ----> Neutral Sentiment
+
 comopund score > 0 -----> Positive Sentiment
 
 Using the above criterion tweets are labelled 1, 0, and 2 for negative, neutral, and positive sentiment respectively. For this another feature 'sentiment' is created.
 
 
 A simple group by sentiment score shows dataset is higly imbalanced.
+
 1 ---> 11467 records
+
 0 ---> 20609 records
+
 2 ---> 26949 records
 
 ![Capture](https://user-images.githubusercontent.com/53952516/121306860-fd3f8d80-c91c-11eb-8501-3be4affc9359.PNG)
