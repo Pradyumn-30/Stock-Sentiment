@@ -25,7 +25,7 @@ The above modules uses regular expressions to carry out the related tasks.
 
 Duplicates were dropped.
 
-##Labelling tweets with sentiment score
+## Labelling tweets with sentiment score
 
 VADER sentitment library is used to attach a sentiment score (compound score) to every single tweet. VADER uses an inbuilt dictionary of words (keys) and the corresponding sentiment score (values). This dictionary can easily be updated depending on the domain we are working. For example here we added words like bear and bull (which are commonly used in stock market) along with corresponding sentiment score.
 
@@ -55,7 +55,7 @@ A simple line graph was plotted to see how average sentiment varies everyday.
 
 ![Capture](https://user-images.githubusercontent.com/53952516/121307514-b0a88200-c91d-11eb-99f5-f3a06c1f0667.PNG)
 
-##Data Cleaaning for Classification Task
+## Data Cleaaning for Classification Task
 
 Apart from removing URLs, mentions, and hastags we need to remove punctuations, special characters, and emoticons from tweet before we go for classification task.
 
@@ -69,11 +69,11 @@ Since accuarcy was considered as the evaluation metric it is important to balanc
 
 Dataset was balanced by taking a random sample of 11466 records from data with class 0 and 2. This makes all three classes to have 11466 records. Now dataset has total of 34398 records.
 
-##Tokenizing the tweets
+## Tokenizing the tweets
 
 Tokenizer with 5000 words were used and fitted on the cleaned tweets to obtain corresponding text vector. Text vector was padded with zeros so that each text vector has same length.
 
-##Training the model
+## Training the model
 
 Dataset was split into training set (0.90) and validation set (0.10).
 
@@ -85,7 +85,8 @@ With batch size of 150 records model was fitted for 15 epochs with Early stoppin
 
 After 6 epochs traing was stopped with ***0.89 % training accuracy*** and ***0.85 % vaildation accuarcy***.
 
----
+## Evaluating different models
+
 Different Sequential models were trained to comapare the results
 
 1. Sequential model with Embedding layer of 5000 words and 0.80 dropout
