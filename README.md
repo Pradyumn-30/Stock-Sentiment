@@ -7,7 +7,6 @@ Sentiment Analysis of TESLA stocks using Recurrent Neural Network
 
 This project aims at classifying tweets into positive, neutral, and negative sentiment and building a classification model to predict the sentiment of tweets.
 
----
 ## Data Cleaning and Preprocessing
 
 TESLA tweets are scrapped from Twitter using snscrape module. Data consists of TESLA related tweets from 21-04-2021 to 21-05-2021. Data is in .csv format and has 59,025 records with three columns (date, content, and username).
@@ -55,7 +54,7 @@ A simple line graph was plotted to see how average sentiment varies everyday.
 
 ![Capture](https://user-images.githubusercontent.com/53952516/121307514-b0a88200-c91d-11eb-99f5-f3a06c1f0667.PNG)
 
-## Data Cleaaning for Classification Task
+## Data Cleaning for Classification Task
 
 Apart from removing URLs, mentions, and hastags we need to remove punctuations, special characters, and emoticons from tweet before we go for classification task.
 
@@ -63,7 +62,7 @@ Every character in the tweet was changed to lowercase and then stop words using 
 
 Each word was lemmatized (changed to its root form) using Text blob lemmatizer.
 
-##Balancing the dataset
+## Balancing the dataset
 
 Since accuarcy was considered as the evaluation metric it is important to balance the dataset first.
 
